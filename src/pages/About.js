@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Portfolio = (props) => {
-    const tstText = 'Hello This is my Portfolio';
+const About = (props) => {
+    const tstText = 'Hello This is My About Page';
 
     // React.useEffect( () => {
-    //     const pictures = fetchArtWork();
+    //     const pictures = fetchAboutData();
     // }
     // );
 
@@ -15,4 +15,4 @@ const Portfolio = (props) => {
     );
 }
 
-export default Portfolio;
+export default About;

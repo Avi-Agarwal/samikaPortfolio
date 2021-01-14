@@ -1,7 +1,7 @@
 import React from 'react';
 
-const About = (props) => {
-    const tstText = 'Hello This is My About Page';
+const Egg = (props) => {
+    const tstText = 'Samika kinda smells';
 
     // React.useEffect( () => {
     //     const pictures = fetchAboutData();
@@ -15,4 +15,4 @@ const About = (props) => {
     );
 }
 
-export default About;
+export default Egg;
