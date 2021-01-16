@@ -8,23 +8,26 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', PT Serif
     monospace;
 }
 
-navStyle {
+.navStyle {
   position: relative;
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-left: 40px;
+  padding-top: 105px;
+  background-color: white;
 }
 
-navBorder {
+.navBorder {
   padding-top: 20px;
   padding-left: 40px;
 }
 
-navText {
-  color: black;
-  font-size: 12px;
+.navText {
+  font-family: "Segoe UI", serif;
+  font-weight: bold;
+  color: yellow;
+
 }
