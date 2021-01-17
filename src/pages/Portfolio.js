@@ -2,6 +2,9 @@ import React from 'react';
 import {
     Link
 } from "react-router-dom";
+import PhotoGallery from "../components/PhotoGallery";
+import {Box} from "@material-ui/core";
+import {boxPadding} from "../styles";
 
 const Portfolio = (props) => {
     const tstText = 'Hello This is my Portfolio';
@@ -13,13 +16,10 @@ const Portfolio = (props) => {
 
     return (
         <div>
-            <h1>
-                {tstText}
-            </h1>
-            <Link to="/">{'Home '}</Link>
-            <Link to="/blog">{'Blog '}</Link>
-            <Link to="/contact">{'Contact '}</Link>
-            <Link to="/about">{'About '}</Link>
+            <br/>
+            <Box >
+                <PhotoGallery/>
+            </Box>
         </div>
     );
 }
