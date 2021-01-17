@@ -31,3 +31,9 @@ export const photoStyle = {
     width: "100%",
     objectFit: 'cover'
 };
+
+export const photoPreview = {
+    height: 400,
+    width: "50%",
+    objectFit: 'contain',
+};

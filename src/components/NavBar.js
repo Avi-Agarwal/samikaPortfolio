@@ -29,7 +29,6 @@ const NavBar = () => {
                             </Form>
                         </Navbar.Collapse>
                     </Navbar>
-                    <br/>
                 </div>
             </div>
         </div>
