@@ -9,9 +9,14 @@ const Blog = (props) => {
     // );
 
     return (
-        <h1>
-            {tstText}
-        </h1>
+        <div>
+            <h1>
+                {tstText}
+            </h1>
+            <p>
+                Hello from Ubunto
+            </p>
+        </div>
     );
 }
 
