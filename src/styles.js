@@ -1,9 +1,9 @@
 export const titleStyle = {
     color: 'black',
     fontFamily: 'Segoe UI',
-    fontWeight: 'bold',
+    fontWeight: 'regular',
     fontSize: 30,
-    letterSpacing: 2
+    letterSpacing: 1
 };
 
 export const navPadding = {
@@ -32,8 +32,28 @@ export const photoStyle = {
     objectFit: 'cover'
 };
 
+export const photoPreviewWrapper = {
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flex: 1
+};
+
 export const photoPreview = {
-    height: 400,
-    width: "50%",
+    height: '90%',
     objectFit: 'contain',
+};
+
+export const subTitle = {
+    color: '#525252',
+    fontSize: '11 px',
+    fontWeight: 'bold'
+}
+
+export const previewText = {
+    fontSize: '12 px',
+    fontWeight: 'light',
+    overflowY: 'scroll'
 };

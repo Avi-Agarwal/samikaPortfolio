@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { findItemLength } from '../utils/gridUtils';
-import {photoPreview, photoStyle} from '../styles';
+import {photoPreview, photoPreviewWrapper, photoStyle, previewText, subTitle} from '../styles';
 import PhotoPreview from "./PhotoPreview";
 import * as photoDirectory from '../assets/photoDirectory';
 import Backdrop from "@material-ui/core/Backdrop";
@@ -28,15 +28,20 @@ const useStyles = makeStyles((theme) => ({
         square: false,
         boxShadow: theme.shadows[5],
         padding: theme.spacing(2, 4, 3),
-        width: '60%',
+        width: '80%',
+        height: '600px',
         display: 'flex',
         flexDirection: 'row',
-        alignItems: 'center'
+        flexWrap: 'wrap'
     },
     previewTextAlign: {
+        height: '100%',
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'flex-start'
+        alignItems: 'flex-start',
+        padding: '20px',
+        flex: 1,
+        overflow: 'hidden'
     }
 }));
 
@@ -70,11 +75,13 @@ export default function PhotoGallery() {
             >
                 <Fade in={open}>
                     <div className={classes.paperPreview}>
-                        <img src={previewPiece.src} style={photoPreview}/>
+                        <div style={photoPreviewWrapper}>
+                            <img src={previewPiece.src} style={photoPreview} />
+                        </div>
                         <div className={classes.previewTextAlign}>
-                            <h2 id="transition-modal-title">{previewPiece.name}</h2>
-                            <h2 id="transition-modal-title">{previewPiece.author + ' ' + previewPiece.medium}</h2>
-                            <p id="transition-modal-description">{previewPiece.description}</p>
+                            <h1 id="preview-title">{previewPiece.name}</h1>
+                            <p id="preview-sub-title" style={subTitle}>{previewPiece.medium + ' - ' +  previewPiece.author}</p>
+                            <p id="preview-description" style={previewText}>{previewPiece.description}</p>
                         </div>
                     </div>
                 </Fade>
