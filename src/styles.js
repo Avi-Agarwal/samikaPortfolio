@@ -55,5 +55,5 @@ export const subTitle = {
 export const previewText = {
     fontSize: '12 px',
     fontWeight: 'light',
-    overflowY: 'scroll'
+    overflowY: 'auto'
 };
