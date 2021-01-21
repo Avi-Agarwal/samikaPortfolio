@@ -1,7 +1,8 @@
 import React from 'react';
+import BlogList from "../components/BlogList";
 
-const Blog = (props) => {
-    const tstText = 'Hello This is my Blog';
+const Blog = () => {
+    const tstText = 'Hello This is my BlogList';
 
     // React.useEffect( () => {
     //     const pictures = fetchBlog();
@@ -10,12 +11,9 @@ const Blog = (props) => {
 
     return (
         <div>
-            <h1>
-                {tstText}
-            </h1>
-            <p>
-                Hello from Ubunto
-            </p>
+            <br/>
+            <br/>
+            <BlogList/>
         </div>
     );
 }
