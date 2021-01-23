@@ -20,8 +20,8 @@ code {
 }
 
 @font-face {
-  font-family: "Raleway";
-  src: local("Raleway"),
+  font-family: "Raleway Bold";
+  src: local("Raleway Bold"),
   url("./fonts/Raleway-Bold.ttf") format("truetype");
   font-weight: bold;
 }
