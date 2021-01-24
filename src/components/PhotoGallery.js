@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         justifyContent: 'center',
     },
-    paperPreview: {
+     paperPreview: {
         backgroundColor: theme.palette.background.paper,
         square: false,
         boxShadow: theme.shadows[5],
