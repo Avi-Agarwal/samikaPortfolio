@@ -19,7 +19,7 @@ const Contact = () => {
         <div style={{display: 'flex', flexDirection: "column", alignItems: "center", justifyContent: 'flex-start', paddingRight: 0, paddingLeft: 0 }}>
             <br/>
             <img src={photoBar} style={barPhoto} />
-            <div style={{display: 'flex', flexDirection:'row', justifyContent: 'space-around', alignItems: 'flex-start', width: '100%', height: '100%'}} >
+            <div style={{display: 'flex', flexDirection:'row', justifyContent: 'space-around', alignItems: 'flex-start', width: '100%', position: "absolute", height: '100%', top: '25vh', flexWrap: "wrap"}} >
                 <Card style={cardStyle}>
                     <CardContent style={{width: '100%'}}>
                         <div style={{paddingRight: 20, paddingLeft: 20}}>

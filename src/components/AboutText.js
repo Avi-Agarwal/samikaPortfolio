@@ -16,7 +16,6 @@ const AboutText  = ({ data, height }) => {
             alignItems: 'flex-start',
             minWidth: 400,
             maxWidth: 1100,
-            paddingLeft: 80,
             flex: 1,
         }}>
             <div id="About-title" style={aboutTitle}>{data.title}</div>

@@ -37,12 +37,12 @@ export const photoStyle = {
 export const iconPhoto = {
     height: 365,
     objectFit: 'contain',
+    paddingRight: 80,
 };
 
 export const iconPhotoRight = {
-    height: 350,
+    height: 365,
     objectFit: 'contain',
-    paddingRight: 120,
 };
 
 export const iconImage = {
@@ -179,12 +179,21 @@ export const barPhoto = {
 export const cardStyle = {
     width: '40%',
     maxWidth: 702,
-    height: '40vh',
+    minWidth: 400,
+    height: '80vh',
     maxHeight: 500,
     boxShadow: '11px 11px 11px #00000016',
     backgroundColor: 'white',
-    overflow: 'auto'
+    overflow: 'auto',
 };
+
+export const wrapRow = {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    flexWrap: 'wrap',
+}
 
 export const contactHeader = {
     fontFamily: 'Arial',
