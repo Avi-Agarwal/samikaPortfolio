@@ -2,7 +2,15 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { findItemLength } from '../utils/gridUtils';
-import {photoPreview, photoPreviewWrapper, photoStyle, previewText, previewTitle, subTitle, previewTextAlign} from '../styles';
+import {
+    photoPreview,
+    photoPreviewWrapper,
+    photoStyle,
+    previewText,
+    previewTitle,
+    subTitle,
+    previewTextWrapper
+} from '../styles';
 import * as photoDirectory from '../assets/photoDirectory';
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
@@ -28,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
         boxShadow: theme.shadows[5],
         padding: theme.spacing(2, 4, 3),
         width: '80%',
-        height: '600px',
+        maxWidth: 1000,
         display: 'flex',
         flexDirection: 'row',
         flexWrap: 'wrap'
@@ -68,7 +76,7 @@ export default function PhotoGallery() {
                         <div style={photoPreviewWrapper}>
                             <img src={previewPiece.src} style={photoPreview} />
                         </div>
-                        <div style={previewTextAlign}>
+                        <div style={previewTextWrapper}>
                             <div id="preview-title" style={previewTitle}>{previewPiece.name}</div>
                             <p id="preview-sub-title" style={subTitle}>{previewPiece.medium + ' - ' +  previewPiece.author}</p>
                             <p id="preview-description" style={previewText}>{previewPiece.description}</p>

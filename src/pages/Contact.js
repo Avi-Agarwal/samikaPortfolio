@@ -24,18 +24,22 @@ const Contact = () => {
                     <CardContent style={{width: '100%'}}>
                         <div style={{paddingRight: 20, paddingLeft: 20}}>
                             <EmailIcon />
-                            <div style={contactHeader}>
+                            <div style={contactHeader} >
                                 Contact me via Email
                             </div>
                             <div style={contactText}>
                                 Please feel free to send me an email regarding any inquiries!
                             </div>
                             <br/>
-                            <div style={emailText}>
-                                Samika7Agarwal@gmail.com
+                            <div style={{paddingTop: 15}}>
+                                <a style={emailText} href="mailto:samika7agarwal@gmail.com" target="_blank">
+                                    Samika7Agarwal@gmail.com
+                                </a>
                             </div>
-                            <div style={emailText}>
-                                SaySmile@gmail.com
+                            <div style={{paddingTop: 15}}>
+                                <a style={emailText} href="mailto:saysmile@gmail.com" target="_blank">
+                                    SaySmile@gmail.com
+                                </a>
                             </div>
                         </div>
                     </CardContent>

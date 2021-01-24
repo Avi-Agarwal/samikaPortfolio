@@ -51,7 +51,7 @@ export const iconImage = {
     paddingRight: 120,
 };
 
-export const previewTextAlign = {
+export const previewTextWrapper = {
     height: '100%',
     display: 'flex',
     flexDirection: 'column',
@@ -76,7 +76,7 @@ export const photoPreviewWrapper = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     flex: 1,
 };
 
@@ -165,8 +165,9 @@ export const blogSubTitle = {
 }
 
 export const photoPreview = {
-    height: '90%',
+    height: 500,
     objectFit: 'contain',
+    paddingTop: 20
 };
 
 export const barPhoto = {
@@ -225,7 +226,6 @@ export const emailText = {
     overflowY: 'hidden',
     letterSpacing: 0,
     lineHeight: 1.1,
-    paddingTop: 15
 };
 
 export const subTitle = {
@@ -241,6 +241,7 @@ export const previewText = {
     fontSize:    18,
     fontWeight: 'normal',
     overflowY: 'auto',
+    height: 380,
     letterSpacing: 0
 };
 
