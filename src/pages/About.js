@@ -15,28 +15,28 @@ const About = () => {
             <br/>
             <br/>
             <div style={{paddingLeft: 20, paddingRight: 20}}>
-                <Grid container spacing={8} direction={"column"}>
-                    <Grid container item xs={12} spacing={4}>
-                        <Grid container item xs={4} justify={"flex-start"}>
+                <Grid container spacing={8} direction={"column"} wrap={"wrap"}>
+                    <Grid container item xs={12} spacing={4} wrap={"wrap"}>
+                        <Grid container item xs={4} justify={"flex-end"}>
                             <img src={aboutData.aboutDirectory[0].img} style={iconPhoto}/>
                         </Grid>
-                        <Grid container item xs={8} justify={"center"}>
+                        <Grid container item xs={8} justify={"flex-start"} wrap={"wrap"}>
                             <AboutText data={aboutData.aboutDirectory[0]} height={365} />
                         </Grid>
                     </Grid>
-                    <Grid container item xs={12} >
-                        <Grid container item xs={8} justify={"center"}>
+                    <Grid container item xs={12} spacing={4} wrap={"wrap"}>
+                        <Grid container item xs={8} justify={"flex-end"}>
                             <AboutLeftText data={aboutData.aboutDirectory[1]} height={365} />
                         </Grid>
-                        <Grid container item xs={4} justify={"flex-end"}>
+                        <Grid container item xs={4} justify={"flex-start"}>
                             <img src={aboutData.aboutDirectory[1].img} style={iconPhoto}/>
                         </Grid>
                     </Grid>
-                    <Grid container item xs={12}>
-                        <Grid container item xs={4} justify={"flex-start"}>
+                    <Grid container item xs={12} spacing={4} wrap={"wrap"}>
+                        <Grid container item xs={4} justify={"flex-end"}>
                             <img src={aboutData.aboutDirectory[2].img} style={iconPhoto}/>
                         </Grid>
-                        <Grid container item xs={8} justify={"center"}>
+                        <Grid container item xs={8} justify={"flex-start"}>
                             <AboutText data={aboutData.aboutDirectory[2]} height={365} />
                         </Grid>
                     </Grid>

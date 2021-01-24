@@ -169,6 +169,56 @@ export const photoPreview = {
     objectFit: 'contain',
 };
 
+export const barPhoto = {
+    width: '100%',
+    height: '100%',
+    maxHeight: 600,
+    objectFit: 'contain',
+};
+
+export const cardStyle = {
+    width: '40%',
+    maxWidth: 702,
+    height: '40vh',
+    maxHeight: 500,
+    boxShadow: '11px 11px 11px #00000016',
+    backgroundColor: 'white',
+    overflow: 'auto'
+};
+
+export const contactHeader = {
+    fontFamily: 'Arial',
+    fontSize:    30,
+    color: '#3B3B3B',
+    fontWeight: 'bold',
+    overflowY: 'hidden',
+    letterSpacing: 0,
+    paddingTop: 23,
+    lineHeight: 1.1,
+};
+
+export const contactText = {
+    fontFamily: 'Arial',
+    fontSize:    30,
+    color: '#414141',
+    fontWeight: 'normal',
+    overflowY: 'hidden',
+    letterSpacing: 0,
+    lineHeight: 1.1,
+    paddingTop: 25
+};
+
+export const emailText = {
+    fontFamily: 'Arial',
+    fontSize:    '1.4em',
+    color: '#00666A',
+    fontWeight: 'normal',
+    overflowY: 'hidden',
+    letterSpacing: 0,
+    lineHeight: 1.1,
+    paddingTop: 15
+};
+
 export const subTitle = {
     fontFamily: 'Raleway',
     color: '#525252',
