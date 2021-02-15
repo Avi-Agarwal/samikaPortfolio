@@ -4,7 +4,7 @@ import Blog from './pages/Blog';
 import Portfolio from './pages/Portfolio';
 import Egg from './pages/Egg';
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 const Router = () => (
     <Switch>
@@ -33,7 +33,7 @@ const Router = () => (
             path='/avi'
             component={Egg}
         />
-
+        <Redirect from='*' to='/' />
     </Switch>
 );
 
