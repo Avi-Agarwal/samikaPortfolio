@@ -15,10 +15,24 @@ export const navPadding = {
     backgroundColor: 'white',
 };
 
+export const navMobile = {
+    paddingLeft: "5%",
+    paddingRight: "5%",
+    paddingTop: "10%",
+    backgroundColor: 'white',
+};
+
 export const boxPadding = {
     width: '100%',
     paddingLeft: "60px",
     paddingRight: "60px",
+    overflow: 'hidden'
+};
+
+export const mobilePadding = {
+    width: '100%',
+    paddingLeft: "5%",
+    paddingRight: "5%",
     overflow: 'hidden'
 };
 
