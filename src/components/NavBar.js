@@ -1,15 +1,17 @@
 import React from 'react'
 import {Navbar, Nav, Form} from 'react-bootstrap'
-import {titleStyle, navPadding, navText} from "../styles";
+import {titleStyle, navPadding, navText, navMobile} from "../styles";
 import {LinkedinLogo} from "../assets/LinkedIn";
 import {InstagramLogo} from "../assets/InstagramLogo";
+import { isMobile } from 'react-device-detect';
 
 const NavBar = () => {
+    console.log(isMobile);
     return (
         <div>
             <div className="row">
                 <div className="navStyle">
-                    <Navbar variant="light" expand="lg" fixed="top"  style={navPadding}>
+                    <Navbar variant="light" expand="lg" fixed="top"  style={isMobile ? navMobile : navPadding}>
                         <Navbar.Brand href="/" style={titleStyle}>SAMIKA</Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav">
