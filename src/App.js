@@ -14,7 +14,7 @@ const App = () => (
             <br/>
             <br/>
             <Box style={boxPadding}>
-                <Router />
+                <Router basename={process.env.PUBLIC_URL} />
             </Box>
         </div>
     </BrowserRouter>
