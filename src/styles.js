@@ -48,6 +48,12 @@ export const photoStyle = {
     objectFit: 'cover'
 };
 
+export const photoStyleMobile = {
+    height: '20vh',
+    width: "100%",
+    objectFit: 'cover'
+};
+
 export const iconPhoto = {
     height: 365,
     objectFit: 'contain',
@@ -74,6 +80,17 @@ export const previewTextWrapper = {
     flex: 1,
     overflowY: 'auto',
     minWidth: 300
+}
+
+export const previewTextWrapperMobile = {
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    padding: '5%',
+    flex: 1,
+    overflowY: 'auto',
+    minWidth: '60vw'
 }
 
 export const blogTextAlign = {
@@ -184,6 +201,12 @@ export const photoPreview = {
     paddingTop: 20
 };
 
+export const photoPreviewMobile = {
+    height: '40vh',
+    objectFit: 'contain',
+    paddingTop: '5%'
+};
+
 export const barPhoto = {
     width: '100%',
     height: '100%',
@@ -250,6 +273,14 @@ export const subTitle = {
     letterSpacing: 1
 }
 
+export const subTitleMobile = {
+    fontFamily: 'Raleway',
+    color: '#525252',
+    fontSize: '2.5vh',
+    fontWeight: 'bold',
+    letterSpacing: 1
+}
+
 export const previewText = {
     fontFamily: 'Raleway',
     fontSize:    18,
@@ -259,9 +290,25 @@ export const previewText = {
     letterSpacing: 0
 };
 
+export const previewTextMobile = {
+    fontFamily: 'Raleway',
+    fontSize:    '2.3vh',
+    fontWeight: 'normal',
+    overflowY: 'auto',
+    height: '20vh',
+    letterSpacing: 0
+};
+
 export const previewTitle = {
     fontFamily: 'Raleway',
     fontSize: 35,
+    fontWeight: 'bold',
+    letterSpacing: 1
+};
+
+export const previewTitleMobile = {
+    fontFamily: 'Raleway',
+    fontSize: '3.5vh',
     fontWeight: 'bold',
     letterSpacing: 1
 };

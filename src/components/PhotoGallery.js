@@ -9,12 +9,18 @@ import {
     previewText,
     previewTitle,
     subTitle,
-    previewTextWrapper
+    previewTextWrapper,
+    photoStyleMobile,
+    photoPreviewMobile,
+    previewTextWrapperMobile,
+    previewTitleMobile,
+    subTitleMobile, previewTextMobile
 } from '../styles';
 import * as photoDirectory from '../assets/photoDirectory';
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import Modal from "@material-ui/core/Modal";
+import {isMobile} from 'react-device-detect';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -41,6 +47,18 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: 'row',
         flexWrap: 'wrap'
     },
+    paperPreviewMobile: {
+        backgroundColor: theme.palette.background.paper,
+        square: false,
+        boxShadow: theme.shadows[5],
+        padding: theme.spacing(1, 2, 1.5),
+        width: '85%',
+        maxWidth: 1000,
+        maxHeight: '90vh',
+        display: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'wrap'
+    },
 }));
 
 export default function PhotoGallery() {
@@ -56,7 +74,7 @@ export default function PhotoGallery() {
                 {photoDirectory.photoDirectory
                     .map((piece, index) => (
                         <Grid item xs={findItemLength(index)} style={{position: 'relative'}}>
-                            <img  src={piece.src} style={photoStyle} onClick={() => {handleOpen(); setPreview(piece)}} />
+                            <img  src={piece.src} style={isMobile ? photoStyleMobile :  photoStyle} onClick={() => {handleOpen(); setPreview(piece)}} />
                         </Grid>
                 ))}
             </Grid>
@@ -72,14 +90,14 @@ export default function PhotoGallery() {
                 }}
             >
                 <Fade in={open}>
-                    <div className={classes.paperPreview}>
+                    <div className={ isMobile ? classes.paperPreviewMobile :classes.paperPreview}>
                         <div style={photoPreviewWrapper}>
-                            <img src={previewPiece.src} style={photoPreview} />
+                            <img src={previewPiece.src} style={isMobile ? photoPreviewMobile : photoPreview} />
                         </div>
-                        <div style={previewTextWrapper}>
-                            <div id='preview-title' style={previewTitle}>{previewPiece.name}</div>
-                            <p id='preview-sub-title' style={subTitle}>{previewPiece.medium + ' - ' +  previewPiece.author}</p>
-                            <p id='preview-description' style={previewText}>{previewPiece.description}</p>
+                        <div style={isMobile ? previewTextWrapperMobile: previewTextWrapper}>
+                            <div id='preview-title' style={isMobile ? previewTitleMobile : previewTitle}>{previewPiece.name}</div>
+                            <p id='preview-sub-title' style={isMobile ? subTitleMobile : subTitle}>{previewPiece.medium + ' - ' +  previewPiece.author}</p>
+                            <p id='preview-description' style={isMobile ? previewTextMobile : previewText}>{previewPiece.description}</p>
                         </div>
                     </div>
                 </Fade>

@@ -27,8 +27,8 @@ const PhotoPreview = (open, handleClose, piece) => {
 
     return open ? (
         <Modal
-            aria-labelledby="transition-modal-title"
-            aria-describedby="transition-modal-description"
+            aria-labelledby='transition-modal-title'
+            aria-describedby='transition-modal-description'
             className={classes.modal}
             open={open}
             onClose={handleClose}
@@ -41,9 +41,9 @@ const PhotoPreview = (open, handleClose, piece) => {
             <Fade in={open}>
                 <div className={classes.paper}>
                     <img src={piece.src} style={photoPreview}/>
-                    <h2 id="transition-modal-title">{piece.name}</h2>
-                    <h2 id="transition-modal-title">{piece.author + ' ' + piece.medium}</h2>
-                    <p id="transition-modal-description">{piece.description}</p>
+                    <h2 id='transition-modal-title'>{piece.name}</h2>
+                    <h2 id='transition-modal-title'>{piece.author + ' ' + piece.medium}</h2>
+                    <p id='transition-modal-description'>{piece.description}</p>
                 </div>
             </Fade>
         </Modal>
