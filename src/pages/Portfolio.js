@@ -7,13 +7,6 @@ import {Box} from "@material-ui/core";
 import {boxPadding} from "../styles";
 
 const Portfolio = () => {
-    const tstText = 'Hello This is my Portfolio';
-
-    // React.useEffect( () => {
-    //     const pictures = fetchArtWork();
-    // }
-    // );
-
     return (
         <div>
             <br/>
