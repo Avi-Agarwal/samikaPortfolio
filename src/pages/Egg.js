@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Egg = (props) => {
+const Egg = () => {
     const tstText = 'Samika kinda smells';
 
     // React.useEffect( () => {

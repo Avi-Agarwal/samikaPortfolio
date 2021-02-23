@@ -22,6 +22,13 @@ export const boxPadding = {
     overflow: 'hidden'
 };
 
+export const mobilePadding = {
+    width: '100%',
+    paddingLeft: "5%",
+    paddingRight: "5%",
+    overflow: 'hidden'
+};
+
 export const navText = {
     color: 'black',
     fontFamily: 'Segoe UI',

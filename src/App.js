@@ -4,16 +4,17 @@ import { BrowserRouter } from "react-router-dom";
 import Router from './Router';
 import NavBar from './components/NavBar';
 import Box from '@material-ui/core/Box';
-import {boxPadding} from "./styles";
+import {boxPadding, mobilePadding} from "./styles";
+import {isMobile} from 'react-device-detect';
 
 const App = () => (
     <BrowserRouter>
-        <div className="App">
+        <div className='App'>
             <NavBar />
             <br/>
             <br/>
             <br/>
-            <Box style={boxPadding}>
+            <Box style={isMobile ? mobilePadding : boxPadding}>
                 <Router basename={process.env.PUBLIC_URL} />
             </Box>
         </div>

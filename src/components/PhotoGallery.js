@@ -77,9 +77,9 @@ export default function PhotoGallery() {
                             <img src={previewPiece.src} style={photoPreview} />
                         </div>
                         <div style={previewTextWrapper}>
-                            <div id="preview-title" style={previewTitle}>{previewPiece.name}</div>
-                            <p id="preview-sub-title" style={subTitle}>{previewPiece.medium + ' - ' +  previewPiece.author}</p>
-                            <p id="preview-description" style={previewText}>{previewPiece.description}</p>
+                            <div id='preview-title' style={previewTitle}>{previewPiece.name}</div>
+                            <p id='preview-sub-title' style={subTitle}>{previewPiece.medium + ' - ' +  previewPiece.author}</p>
+                            <p id='preview-description' style={previewText}>{previewPiece.description}</p>
                         </div>
                     </div>
                 </Fade>
