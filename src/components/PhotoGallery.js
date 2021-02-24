@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { findItemLength } from '../utils/gridUtils';
@@ -6,16 +6,10 @@ import {
     photoPreview,
     photoPreviewWrapper,
     photoStyle,
-    photoStyleMobile,
     previewText,
     previewTitle,
     subTitle,
     previewTextWrapper,
-    previewTextWrapperMobile,
-    previewTitleMobile,
-    photoPreviewMobile,
-    previewTextMobile,
-    subTitleMobile
 } from '../styles';
 import * as photoDirectory from '../assets/photoDirectory';
 import Backdrop from "@material-ui/core/Backdrop";
@@ -41,14 +35,14 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: theme.palette.background.paper,
         square: false,
         boxShadow: theme.shadows[5],
-        padding: theme.spacing(2, 4, 3),
-        width: '80%',
-        maxWidth: 1000,
+        padding: isMobile ? theme.spacing(1, 2, 1.5) : theme.spacing(2, 4, 3),
+        width: isMobile ? '90vw' : '80%',
+        maxWidth: isMobile ? '90vw' : 1000,
         display: 'flex',
         flexDirection: 'row',
          maxHeight: '90vh',
-         minWidth: 1000,
-         overflow: 'hidden'
+         minWidth: isMobile ? null : 1000,
+         flexWrap: isMobile ? 'wrap' : null
     },
     paperPreviewMobile: {
         backgroundColor: theme.palette.background.paper,
@@ -76,7 +70,7 @@ export default function PhotoGallery() {
                 {photoDirectory.photoDirectory
                     .map((piece, index) => (
                         <Grid item xs={findItemLength(index)} style={{position: 'relative'}}>
-                            <img  src={piece.src} style={isMobile ? photoStyleMobile : photoStyle} onClick={() => {handleOpen(); setPreview(piece)}} />
+                            <img  src={piece.src} style={photoStyle} onClick={() => {handleOpen(); setPreview(piece)}} />
                         </Grid>
                 ))}
             </Grid>
@@ -92,14 +86,14 @@ export default function PhotoGallery() {
                 }}
             >
                 <Fade in={open}>
-                    <div className={isMobile ? classes.paperPreviewMobile : classes.paperPreview}>
+                    <div className={classes.paperPreview}>
                         <div style={photoPreviewWrapper}>
-                            <img src={previewPiece.src} style={isMobile ? photoPreviewMobile : photoPreview} />
+                            <img src={previewPiece.src} style={photoPreview} />
                         </div>
-                        <div style={isMobile ? previewTextWrapperMobile : previewTextWrapper}>
-                            <div id="preview-title" style={isMobile ? previewTitleMobile : previewTitle}>{previewPiece.name}</div>
-                            <p id="preview-sub-title" style={isMobile ? subTitleMobile : subTitle}>{previewPiece.medium + ' - ' +  previewPiece.author}</p>
-                            <p id="preview-description" style={isMobile ? previewTextMobile : previewText}>{previewPiece.description}</p>
+                        <div style={previewTextWrapper}>
+                            <div id="preview-title" style={previewTitle}>{previewPiece.name}</div>
+                            <p id="preview-sub-title" style={subTitle}>{previewPiece.medium + ' - ' +  previewPiece.author}</p>
+                            <p id="preview-description" style={previewText}>{previewPiece.description}</p>
                         </div>
                     </div>
                 </Fade>

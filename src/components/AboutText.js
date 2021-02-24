@@ -3,7 +3,6 @@ import {
     aboutTitle,
     aboutText, aboutLine,
 } from "../styles";
-import Grid from "@material-ui/core/Grid";
 
 
 const AboutText  = ({ data, height }) => {

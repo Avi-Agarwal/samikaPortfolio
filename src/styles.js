@@ -1,4 +1,6 @@
 import './index.css'
+import React from "react";
+import { isMobile } from 'react-device-detect';
 
 export const titleStyle = {
     color: 'black',
@@ -9,10 +11,12 @@ export const titleStyle = {
 };
 
 export const navPadding = {
-    paddingLeft: "60px",
-    paddingRight: "60px",
-    paddingTop: "20px",
+    paddingLeft: isMobile ? '7%' : "60px",
+    paddingRight: isMobile ? '7%' : "60px",
+    paddingTop: isMobile ? '5%' : '20px',
     backgroundColor: 'white',
+    margin: '0 auto',
+    maxWidth: isMobile ? null : 1800,
 };
 
 export const navMobile = {
@@ -22,11 +26,13 @@ export const navMobile = {
     backgroundColor: 'white',
 };
 
-export const boxPadding = {
+export const appWrapper = {
     width: '100%',
-    paddingLeft: "60px",
-    paddingRight: "60px",
-    overflow: 'hidden'
+    margin: '0 auto',
+    maxWidth: isMobile ? null : 1800,
+    paddingLeft: isMobile ? '7%' : "60px",
+    paddingRight: isMobile ? '7%' : "60px",
+    overflow: 'hidden',
 };
 
 export const boxPaddingMobile = {
@@ -43,7 +49,7 @@ export const navText = {
 };
 
 export const photoStyle = {
-    height: '35vh',
+    height: isMobile ? '20vh' : '35vh',
     width: "100%",
     objectFit: 'cover'
 };
@@ -76,10 +82,15 @@ export const previewTextWrapper = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-start',
-    padding: '20px',
-    flex: 1,
+    padding: isMobile ? null : '20px',
+    paddingTop: isMobile ? '5%' : null ,
+    paddingLeft: isMobile ? '5%' : null ,
+    paddingRight: isMobile ? '5%' : null ,
+    paddingBottom: isMobile ? '2%' : null ,
+    flex: isMobile ? null : 1,
     overflowY: 'auto',
-    minWidth: 300
+    minWidth: isMobile ? null : 300,
+    width: isMobile ? '80vw' : null
 }
 
 export const previewTextWrapperMobile = {
@@ -87,7 +98,10 @@ export const previewTextWrapperMobile = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-start',
-    padding: '5%',
+    paddingTop: '5%',
+    paddingLeft: '5%',
+    paddingRight: '5%',
+    paddingBottom: '2%',
     overflowY: 'auto',
     width: '80vw',
 }
@@ -133,7 +147,15 @@ export const blogWrapper = {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'flex-start',
-    justifyContent: 'flex-start',
+    justifyContent: isMobile ? 'center' : 'flex-start',
+    flexWrap: 'wrap'
+};
+
+export const blogWrapperMobile = {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    justifyContent: 'center',
     flexWrap: 'wrap'
 };
 
@@ -146,9 +168,15 @@ export const columnWrapper = {
 };
 
 export const blogImage = {
-    width: '460px',
+    width: isMobile ? '85vw' : '460px',
     objectFit: 'contain',
-    paddingRight: '80px',
+    paddingRight: isMobile ? null :'80px',
+};
+
+export const blogImageMobile = {
+    width: '80vw',
+    objectFit: 'contain',
+    paddingRight: '5vw',
 };
 
 export const aboutText = {
@@ -181,8 +209,10 @@ export const blogText = {
 
 export const blogTitle = {
     fontFamily: 'Raleway',
-    fontSize: 40,
+    fontSize: isMobile ? '3vh' : 40,
+    paddingTop: isMobile ? '1vh' : 0,
     fontWeight: 'bold',
+    textAlign: isMobile ? 'left' : null,
     letterSpacing: 1
 };
 
@@ -195,9 +225,10 @@ export const blogSubTitle = {
 }
 
 export const photoPreview = {
-    height: 500,
+    height: isMobile ? '40vh' : 500,
+    maxWidth: isMobile ? '80vw' : 400,
     objectFit: 'contain',
-    paddingTop: 20
+    paddingTop: isMobile ? '4%' : 20
 };
 
 export const photoPreviewMobile = {
@@ -230,7 +261,6 @@ export const wrapRow = {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'flex-start',
-    flexWrap: 'wrap',
 }
 
 export const contactHeader = {
@@ -268,7 +298,7 @@ export const emailText = {
 export const subTitle = {
     fontFamily: 'Raleway',
     color: '#525252',
-    fontSize: 20,
+    fontSize: isMobile ? '2vh' : 20,
     fontWeight: 'bold',
     letterSpacing: 1
 }
@@ -283,10 +313,10 @@ export const subTitleMobile = {
 
 export const previewText = {
     fontFamily: 'Raleway',
-    fontSize:    18,
+    fontSize:    isMobile ? '2vh' :  18,
     fontWeight: 'normal',
     overflowY: 'auto',
-    height: 380,
+    maxHeight: isMobile ? '24vh' : 380,
     letterSpacing: 0
 };
 
@@ -295,13 +325,13 @@ export const previewTextMobile = {
     fontSize:    '2vh',
     fontWeight: 'normal',
     overflowY: 'auto',
-    height: '24vh',
+    maxHeight: '24vh',
     letterSpacing: 0
 };
 
 export const previewTitle = {
     fontFamily: 'Raleway',
-    fontSize: 35,
+    fontSize: isMobile ? '3vh' : 35,
     fontWeight: 'bold',
     letterSpacing: 1
 };

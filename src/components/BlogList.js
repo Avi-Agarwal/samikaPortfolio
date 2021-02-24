@@ -1,13 +1,9 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import * as photoDirectory from "../assets/photoDirectory";
 import Grid from "@material-ui/core/Grid";
-import {findItemLength} from "../utils/gridUtils";
-import {
-    blogImage, blogSubTitle, blogText, blogTextAlign, blogTitle,
-    blogWrapper, lineBreak,
-} from "../styles";
-import BlogTextWrapper from "./BlogTextWrapper";
+import {blogImage, blogImageMobile, blogWrapper, blogWrapperMobile, lineBreak} from "../styles";
 import BlogText from "./BlogTextWrapper";
+import { isMobile } from 'react-device-detect';
 
 
 
