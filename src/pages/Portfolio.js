@@ -1,22 +1,12 @@
 import React from 'react';
-import {
-    Link
-} from "react-router-dom";
 import PhotoGallery from "../components/PhotoGallery";
 import {Box} from "@material-ui/core";
-import {boxPadding} from "../styles";
+import { isMobile } from 'react-device-detect';
 
 const Portfolio = () => {
-    const tstText = 'Hello This is my Portfolio';
-
-    // React.useEffect( () => {
-    //     const pictures = fetchArtWork();
-    // }
-    // );
-
     return (
         <div>
-            <br/>
+            { isMobile ? (null) : (<br/>) }
             <Box >
                 <PhotoGallery/>
             </Box>

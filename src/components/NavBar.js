@@ -1,6 +1,6 @@
 import React from 'react'
 import {Navbar, Nav, Form} from 'react-bootstrap'
-import {titleStyle, navPadding, navText} from "../styles";
+import {titleStyle, navPadding, navText, navMobile} from "../styles";
 import {LinkedinLogo} from "../assets/LinkedIn";
 import {InstagramLogo} from "../assets/InstagramLogo";
 

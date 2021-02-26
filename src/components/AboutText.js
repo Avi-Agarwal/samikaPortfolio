@@ -3,7 +3,7 @@ import {
     aboutTitle,
     aboutText, aboutLine,
 } from "../styles";
-import Grid from "@material-ui/core/Grid";
+import { isMobile } from 'react-device-detect';
 
 
 const AboutText  = ({ data, height }) => {
@@ -12,11 +12,11 @@ const AboutText  = ({ data, height }) => {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
-            height: height,
-            alignItems: 'flex-start',
-            minWidth: 400,
-            maxWidth: 1100,
-            flex: 1,
+            height: isMobile ? '35vh' : height,
+            alignItems: isMobile ? 'flex-start' : 'center',
+            minWidth: isMobile ? '80vw' : 400,
+            maxWidth: isMobile ?  '80vw' : 1100,
+            flex: isMobile  ? null : 1,
         }}>
             <div id="About-title" style={aboutTitle}>{data.title}</div>
             <p id="About-description" style={aboutText}>{data.description}</p>

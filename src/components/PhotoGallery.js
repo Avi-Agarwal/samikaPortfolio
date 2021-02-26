@@ -9,12 +9,13 @@ import {
     previewText,
     previewTitle,
     subTitle,
-    previewTextWrapper
+    previewTextWrapper,
 } from '../styles';
 import * as photoDirectory from '../assets/photoDirectory';
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import Modal from "@material-ui/core/Modal";
+import { isMobile } from 'react-device-detect';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -34,9 +35,22 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: theme.palette.background.paper,
         square: false,
         boxShadow: theme.shadows[5],
-        padding: theme.spacing(2, 4, 3),
-        width: '80%',
-        maxWidth: 1000,
+        padding: isMobile ? theme.spacing(1, 2, 1.5) : theme.spacing(2, 4, 3),
+        width: isMobile ? '90vw' : '80%',
+        maxWidth: isMobile ? '90vw' : 1000,
+        display: 'flex',
+        flexDirection: 'row',
+         maxHeight: '90vh',
+         minWidth: isMobile ? null : 1000,
+         flexWrap: isMobile ? 'wrap' : null
+    },
+    paperPreviewMobile: {
+        backgroundColor: theme.palette.background.paper,
+        square: false,
+        boxShadow: theme.shadows[5],
+        padding: theme.spacing(1, 2, 1.5),
+        width: '90%',
+        maxHeight: '90vh',
         display: 'flex',
         flexDirection: 'row',
         flexWrap: 'wrap'

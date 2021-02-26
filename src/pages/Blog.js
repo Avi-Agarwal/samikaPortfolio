@@ -1,18 +1,11 @@
 import React from 'react';
 import BlogList from "../components/BlogList";
+import {isMobile} from "react-device-detect";
 
 const Blog = () => {
-    const tstText = 'Hello This is my BlogList';
-
-    // React.useEffect( () => {
-    //     const pictures = fetchBlog();
-    // }
-    // );
-
     return (
         <div>
-            <br/>
-            <br/>
+            { isMobile ? (null) : (<><br/><br/></>) }
             <BlogList />
         </div>
     );

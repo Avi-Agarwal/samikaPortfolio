@@ -1,4 +1,10 @@
 import './index.css'
+import React from "react";
+import { isMobile } from 'react-device-detect';
+
+export const lockMobileOrientation = {
+    orientation : isMobile ?  'portrait' : null
+};
 
 export const titleStyle = {
     color: 'black',
@@ -9,16 +15,41 @@ export const titleStyle = {
 };
 
 export const navPadding = {
-    paddingLeft: "60px",
-    paddingRight: "60px",
-    paddingTop: "20px",
+    paddingLeft: isMobile ? '7%' : "60px",
+    paddingRight: isMobile ? '7%' : "60px",
+    paddingTop: isMobile ? '5%' : '20px',
+    backgroundColor: 'white',
+    margin: '0 auto',
+    maxWidth: isMobile ? null : 1800,
+};
+
+export const navMobile = {
+    paddingLeft: "7%",
+    paddingRight: "7%",
+    paddingTop: "5%",
     backgroundColor: 'white',
 };
 
-export const boxPadding = {
+export const aboutBorder = {
+    paddingLeft: isMobile ? "7%" : 20,
+    paddingRight: isMobile ? "7%" : 20,
+    paddingTop: "5%",
+    backgroundColor: 'white',
+};
+
+export const appWrapper = {
     width: '100%',
-    paddingLeft: "60px",
-    paddingRight: "60px",
+    margin: '0 auto',
+    maxWidth: isMobile ? null : 1800,
+    paddingLeft: isMobile ? '7%' : "60px",
+    paddingRight: isMobile ? '7%' : "60px",
+    overflow: 'hidden',
+};
+
+export const boxPaddingMobile = {
+    width: '100%',
+    paddingLeft: "7%",
+    paddingRight: "7%",
     overflow: 'hidden'
 };
 
@@ -29,15 +60,23 @@ export const navText = {
 };
 
 export const photoStyle = {
-    height: 400,
+    height: isMobile ? '20vh' : '35vh',
+    width: "100%",
+    objectFit: 'cover'
+};
+
+export const photoStyleMobile = {
+    height: '20vh',
     width: "100%",
     objectFit: 'cover'
 };
 
 export const iconPhoto = {
-    height: 365,
+    height: isMobile ? null : 365,
+    width: isMobile ? '100%' : null,
     objectFit: 'contain',
-    paddingRight: 80,
+    paddingRight: isMobile ? '0' : 80,
+    paddingBottom: isMobile ? '2vh': null
 };
 
 export const iconPhotoRight = {
@@ -56,10 +95,28 @@ export const previewTextWrapper = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-start',
-    padding: '20px',
-    flex: 1,
+    padding: isMobile ? null : '20px',
+    paddingTop: isMobile ? '5%' : null ,
+    paddingLeft: isMobile ? '5%' : null ,
+    paddingRight: isMobile ? '5%' : null ,
+    paddingBottom: isMobile ? '2%' : null ,
+    flex: isMobile ? null : 1,
     overflowY: 'auto',
-    minWidth: 300
+    minWidth: isMobile ? null : 300,
+    width: isMobile ? '80vw' : null
+}
+
+export const previewTextWrapperMobile = {
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    paddingTop: '5%',
+    paddingLeft: '5%',
+    paddingRight: '5%',
+    paddingBottom: '2%',
+    overflowY: 'auto',
+    width: '80vw',
 }
 
 export const blogTextAlign = {
@@ -103,7 +160,15 @@ export const blogWrapper = {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'flex-start',
-    justifyContent: 'flex-start',
+    justifyContent: isMobile ? 'center' : 'flex-start',
+    flexWrap: 'wrap'
+};
+
+export const blogWrapperMobile = {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    justifyContent: 'center',
     flexWrap: 'wrap'
 };
 
@@ -116,9 +181,15 @@ export const columnWrapper = {
 };
 
 export const blogImage = {
-    width: '460px',
+    width: isMobile ? '85vw' : '460px',
     objectFit: 'contain',
-    paddingRight: '80px',
+    paddingRight: isMobile ? null :'80px',
+};
+
+export const blogImageMobile = {
+    width: '80vw',
+    objectFit: 'contain',
+    paddingRight: '5vw',
 };
 
 export const aboutText = {
@@ -126,14 +197,16 @@ export const aboutText = {
     fontSize:    20,
     fontWeight: 'normal',
     overflow: 'hidden',
-    textAlign: 'left',
+    textAlign: isMobile ? 'center' : 'left',
     letterSpacing: 1,
 };
 
 export const aboutTitle = {
     fontFamily:'Segoe UI',
     fontWeight: 'normal',
-    fontSize: 40,
+    width: isMobile ? '100%' : null,
+    fontSize: isMobile ? '5vh' : 40,
+    textAlign: isMobile ? 'center' : null,
     letterSpacing: 2,
     color: '#D65748',
     borderBottom: '1px solid #70707055',
@@ -151,8 +224,10 @@ export const blogText = {
 
 export const blogTitle = {
     fontFamily: 'Raleway',
-    fontSize: 40,
+    fontSize: isMobile ? '3vh' : 40,
+    paddingTop: isMobile ? '1vh' : 0,
     fontWeight: 'bold',
+    textAlign: isMobile ? 'left' : null,
     letterSpacing: 1
 };
 
@@ -165,9 +240,17 @@ export const blogSubTitle = {
 }
 
 export const photoPreview = {
-    height: 500,
+    height: isMobile ? '40vh' : 500,
+    maxWidth: isMobile ? '80vw' : 400,
     objectFit: 'contain',
-    paddingTop: 20
+    paddingTop: isMobile ? '4%' : 20
+};
+
+export const photoPreviewMobile = {
+    height: '40vh',
+    maxWidth: '80vw',
+    objectFit: 'contain',
+    paddingTop: '4%'
 };
 
 export const barPhoto = {
@@ -190,10 +273,10 @@ export const cardStyle = {
 
 export const wrapRow = {
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: isMobile ? 'row' : 'row',
     alignItems: 'center',
-    justifyContent: 'flex-start',
-    flexWrap: 'wrap',
+    justifyContent: isMobile ? 'center': 'flex-start',
+    flexWrap: isMobile ? 'wrap' : null
 }
 
 export const contactHeader = {
@@ -231,23 +314,47 @@ export const emailText = {
 export const subTitle = {
     fontFamily: 'Raleway',
     color: '#525252',
-    fontSize: 20,
+    fontSize: isMobile ? '2vh' : 20,
+    fontWeight: 'bold',
+    letterSpacing: 1
+}
+
+export const subTitleMobile = {
+    fontFamily: 'Raleway',
+    color: '#525252',
+    fontSize: '2vh',
     fontWeight: 'bold',
     letterSpacing: 1
 }
 
 export const previewText = {
     fontFamily: 'Raleway',
-    fontSize:    18,
+    fontSize:    isMobile ? '2vh' :  18,
     fontWeight: 'normal',
     overflowY: 'auto',
-    height: 380,
+    maxHeight: isMobile ? '24vh' : 380,
+    letterSpacing: 0
+};
+
+export const previewTextMobile = {
+    fontFamily: 'Raleway',
+    fontSize:    '2vh',
+    fontWeight: 'normal',
+    overflowY: 'auto',
+    maxHeight: '24vh',
     letterSpacing: 0
 };
 
 export const previewTitle = {
     fontFamily: 'Raleway',
-    fontSize: 35,
+    fontSize: isMobile ? '3vh' : 35,
+    fontWeight: 'bold',
+    letterSpacing: 1
+};
+
+export const previewTitleMobile = {
+    fontFamily: 'Raleway',
+    fontSize: '2.5vh',
     fontWeight: 'bold',
     letterSpacing: 1
 };

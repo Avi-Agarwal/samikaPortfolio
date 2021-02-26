@@ -1,11 +1,6 @@
 import React from "react";
-import * as photoDirectory from "../assets/photoDirectory";
-import Grid from "@material-ui/core/Grid";
-import {findItemLength} from "../utils/gridUtils";
-import {
-    blogImage, blogSubTitle, blogText, blogTextAlign, blogTitle,
-    blogWrapper, lineBreak,
-} from "../styles";
+import { blogSubTitle, blogText, blogTitle } from "../styles";
+import { isMobile } from 'react-device-detect';
 
 
 const BlogText  = ({ height, data }) => {
@@ -14,10 +9,11 @@ const BlogText  = ({ height, data }) => {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'flex-start',
-            maxHeight: height,
+            maxHeight: isMobile ? '40vh' : height,
             alignItems: 'flex-start',
-            minWidth: 400,
-            flex: 1
+            minWidth: isMobile ? '85vw' : 400,
+            maxWidth: isMobile ?  '85vw' : null,
+            flex: isMobile  ? null : 1
         }}>
             <div id="blog-title" style={blogTitle}>{data.name}</div>
             <p id="blog-sub-title" style={blogSubTitle}>{data.medium + ' - ' +  data.author}</p>
