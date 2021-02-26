@@ -2,6 +2,10 @@ import './index.css'
 import React from "react";
 import { isMobile } from 'react-device-detect';
 
+export const lockMobileOrientation = {
+    orientation : isMobile ?  'portrait' : null
+};
+
 export const titleStyle = {
     color: 'black',
     fontFamily: 'Segoe UI',
@@ -22,6 +26,13 @@ export const navPadding = {
 export const navMobile = {
     paddingLeft: "7%",
     paddingRight: "7%",
+    paddingTop: "5%",
+    backgroundColor: 'white',
+};
+
+export const aboutBorder = {
+    paddingLeft: isMobile ? "7%" : 20,
+    paddingRight: isMobile ? "7%" : 20,
     paddingTop: "5%",
     backgroundColor: 'white',
 };
@@ -61,9 +72,11 @@ export const photoStyleMobile = {
 };
 
 export const iconPhoto = {
-    height: 365,
+    height: isMobile ? null : 365,
+    width: isMobile ? '100%' : null,
     objectFit: 'contain',
-    paddingRight: 80,
+    paddingRight: isMobile ? '0' : 80,
+    paddingBottom: isMobile ? '2vh': null
 };
 
 export const iconPhotoRight = {
@@ -184,14 +197,16 @@ export const aboutText = {
     fontSize:    20,
     fontWeight: 'normal',
     overflow: 'hidden',
-    textAlign: 'left',
+    textAlign: isMobile ? 'center' : 'left',
     letterSpacing: 1,
 };
 
 export const aboutTitle = {
     fontFamily:'Segoe UI',
     fontWeight: 'normal',
-    fontSize: 40,
+    width: isMobile ? '100%' : null,
+    fontSize: isMobile ? '5vh' : 40,
+    textAlign: isMobile ? 'center' : null,
     letterSpacing: 2,
     color: '#D65748',
     borderBottom: '1px solid #70707055',
@@ -258,9 +273,10 @@ export const cardStyle = {
 
 export const wrapRow = {
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: isMobile ? 'row' : 'row',
     alignItems: 'center',
-    justifyContent: 'flex-start',
+    justifyContent: isMobile ? 'center': 'flex-start',
+    flexWrap: isMobile ? 'wrap' : null
 }
 
 export const contactHeader = {
