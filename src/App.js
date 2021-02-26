@@ -8,7 +8,7 @@ import {appWrapper} from "./styles";
 const App = () => (
     <BrowserRouter>
         <div >
-            <div className="App">
+            <div className='App'>
                 <NavBar />
                 <br/>
                 <br/>
