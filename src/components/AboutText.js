@@ -13,7 +13,7 @@ const AboutText  = ({ data, height }) => {
             flexDirection: 'column',
             justifyContent: 'center',
             height: isMobile ? '35vh' : height,
-            alignItems: isMobile ? 'flex-start' : 'center',
+            alignItems: isMobile ? 'center' :  'flex-start',
             minWidth: isMobile ? '80vw' : 400,
             maxWidth: isMobile ?  '80vw' : 1100,
             flex: isMobile  ? null : 1,
