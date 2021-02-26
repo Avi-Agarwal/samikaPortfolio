@@ -227,7 +227,7 @@ export const blogTitle = {
     fontSize: isMobile ? '3vh' : 40,
     paddingTop: isMobile ? '1vh' : 0,
     fontWeight: 'bold',
-    textAlign: isMobile ? 'left' : null,
+    textAlign: 'left',
     letterSpacing: 1
 };
 
@@ -236,6 +236,7 @@ export const blogSubTitle = {
     color: '#525252',
     fontSize: 20,
     fontWeight: 'bold',
+    textAlign: 'left',
     letterSpacing: 1
 }
 
