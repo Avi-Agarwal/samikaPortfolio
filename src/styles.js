@@ -282,7 +282,7 @@ export const wrapRow = {
 
 export const contactHeader = {
     fontFamily: 'Arial',
-    fontSize:    30,
+    fontSize: isMobile ? '4vh' : 30,
     color: '#3B3B3B',
     fontWeight: 'bold',
     overflowY: 'hidden',

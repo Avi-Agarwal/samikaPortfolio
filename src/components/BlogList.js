@@ -26,12 +26,10 @@ export default function BlogList() {
                                 <BlogText height={imageHeight} data={piece}/>
                             </div>
                             {
-                                isMobile ? null : (<><br/><br/></>)
+                                isMobile ? (<br/>) : (<><br/><br/></>)
                             }
                             <hr style={lineBreak}/>
-                            {
-                                isMobile ? null : (<br/>)
-                            }
+                            <br/>
                         </Grid>
                     ))}
             </Grid>
