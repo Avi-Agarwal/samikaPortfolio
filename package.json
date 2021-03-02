@@ -19,7 +19,7 @@
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy-prod": "surge build samika-portfolio.com",
-    "deploy-stage": "surge build samika-test.surge.sh",
+    "deploy-stage": "surge build https://samika-test.surge.sh",
     "build": "react-scripts build && cp build/index.html build/200.html",
     "build-nelly": "react-scripts build",
     "test": "react-scripts test",
