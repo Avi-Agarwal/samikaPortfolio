@@ -1,5 +1,6 @@
 import React from 'react';
 import mihikha from './photos/mikiha.png';
+import joker from './photos/joker.png';
 
 export const photoDirectory = [
     {
@@ -51,10 +52,10 @@ export const photoDirectory = [
             'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'
     },
     {
-        src: 'https://images.squarespace-cdn.com/content/v1/5fefc51766132f51ded8b0d3/1609731639663-62BCA99U711VVXWB5A99/ke17ZwdGBToddI8pDm48kDqtvYnLNR4pcHXnMQkQHtR7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0kMlYkjvFlctRdmAM11rxFS7YnbT2pyIZhvqT1PU7Gq45Q2BI4chAxY7zTGwD4NZlg/IMG_5892.JPG?format=750w',
-        name:  'Sketchbook',
+        src: 'https://images.squarespace-cdn.com/content/v1/61af74eb538f6e0fefa5c521/4e0da05b-296e-43b5-83a1-bf06d35ffee2/AgarwalSamika_MusictoMyEars.jpeg?format=500w',
+        name:  'MUSIC IN MY EARS',
         author: 'Samika Agarwal',
-        medium: 'Mixed Media',
+        medium: 'Soft Pastel',
         description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.\n' +
             'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'
     },
@@ -82,7 +83,7 @@ export const photoDirectory = [
             'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'
     },
     {
-        src: 'https://images.squarespace-cdn.com/content/v1/5fefc51766132f51ded8b0d3/1609905818106-VFG1B6YUH67JDIGNABDX/ke17ZwdGBToddI8pDm48kC5tm1DDakHrGon55oJAqD8UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8GRo6ASst2s6pLvNAu_PZdIo-rblHLEUCRhIYmUls2kmxlZV3bdkbQa-t8hWDZ4H3l7ykRUb0u2kRuO3thupT_Y/Screen+Shot+2021-01-05+at+7.56.11+PM.png?format=750w',
+        src: joker,
         name:  'Joker\'s Suit',
         author: 'Samika Agarwal',
         medium: 'Acrylic',
