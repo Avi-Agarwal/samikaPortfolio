@@ -3,7 +3,7 @@ import mihikha from './photos/mikiha.png';
 
 export const photoDirectory = [
     {
-        src: 'https://images.squarespace-cdn.com/content/v1/5fefc51766132f51ded8b0d3/1609550038966-TPHQJTTN4IK08QAX0XJS/ke17ZwdGBToddI8pDm48kKnFHmmQA2pU9lrzEJ9mmNx7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0scl71iiVnMuLeEyTFSXT3pxH7S1OsEfzFD91oZYw2HBHr-dno1UB_1Q1kpws5kwqQ/01AnOdeofLove.JPG?format=750w',
+        src: 'https://images.squarespace-cdn.com/content/v1/61af74eb538f6e0fefa5c521/1638888731387-M3JHC5N5OG2HMZVM83IS/01AnOdeofLove.JPG?format=1000w',
         name:  'An Ode of Love',
         author: 'Samika Agarwal',
         medium: 'Oil Paint',
@@ -11,7 +11,7 @@ export const photoDirectory = [
             'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'
     },
     {
-        src: 'https://images.squarespace-cdn.com/content/v1/5fefc51766132f51ded8b0d3/1609736528036-HUN9LQJU7S4MRKXCIDGH/ke17ZwdGBToddI8pDm48kJdnMhl2mO0VaHXqdSkLv7V7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0p4Wyba38KfG317vYluk45-JqcJz_4_NVOBC1cIOOMjnYyq2AEf-MuRoyPq5m_JbdQ/05australianfires.jpeg?format=750w',
+        src: 'https://images.squarespace-cdn.com/content/v1/61af74eb538f6e0fefa5c521/1638888732199-9ZCFCSLS4LG226R2VRST/DarknessBeforeTheDawn-2020.jpg?format=1000w',
         name:  'Australion Fires',
         author: 'Samika Agarwal',
         medium: 'Mixed Media',
@@ -19,10 +19,10 @@ export const photoDirectory = [
             'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'
     },
     {
-        src: 'https://images.squarespace-cdn.com/content/v1/5fefc51766132f51ded8b0d3/1609550525585-S8E4Q4IWUGALVMLAI33I/ke17ZwdGBToddI8pDm48kLSuWeOVf8RKMuO44-hTpU57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0hHMyhIh2kKzuOL3ydJCryA2fVlgtqqMtONwzM81etR3meMlpWMyWogJSUthAW5IXw/06Samika_+Darkness+Before+the+Dawn.jpeg?format=750w',
-        name:  'Darkness Before the Dawn',
+        src: 'https://images.squarespace-cdn.com/content/v1/61af74eb538f6e0fefa5c521/4a5002f6-e5c9-4610-8db5-778909ca8cf5/Product+design+2.png?format=1000w',
+        name:  'Paint Pen Product Design Sketches',
         author: 'Samika Agarwal',
-        medium: 'Oil Paint',
+        medium: 'Product Design',
         description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.\n' +
             'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et juo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. pAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. p'
     },
@@ -35,7 +35,7 @@ export const photoDirectory = [
             'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'
     },
     {
-        src: 'https://images.squarespace-cdn.com/content/v1/5fefc51766132f51ded8b0d3/1609736605792-BQJKXUFL2SY2X03T5S7Q/ke17ZwdGBToddI8pDm48kNfTAjpD7GMl7KLYex7VjDd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmEczKEiHaQrO44vfJ0kKvIMWgV6WW9AGg7WwLnbb8VBqVsTYQAeSTY-WEs5wK2Pk2/02Samika_EleanorLinesofLIfe.jpg?format=750w',
+        src: 'https://images.squarespace-cdn.com/content/v1/61af74eb538f6e0fefa5c521/2ce2a088-148b-4dd0-a2ff-c11343ef0763/SamikaAgarwal_EleanorLinesofLIfe.jpg?format=1000w',
         name:  'Lines of Life',
         author: 'Samika Agarwal',
         medium: 'Graphite',
@@ -43,10 +43,10 @@ export const photoDirectory = [
             'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'
     },
     {
-        src: 'https://images.squarespace-cdn.com/content/v1/5fefc51766132f51ded8b0d3/1609550073469-KDG110K8Q6ZA60WUAY1P/ke17ZwdGBToddI8pDm48kNlzTy10rUA-caCBP8dkFox7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UUjT7nxkm1_ig-JDzqb5HdHqXd7qSzL7QfxOzyXFpkQeo7FeJskalxBbBwn9mkF54A/IMG_5859.JPG?format=750w',
-        name:  '(Unfinished) The Food Dream',
+        src: 'https://images.squarespace-cdn.com/content/v1/61af74eb538f6e0fefa5c521/030d0768-1ba6-4323-9a7a-90989dd0ca74/AgarwalSamika_TrappedbyThoughts.jpeg?format=500w',
+        name:  'Trapped in Thoughts',
         author: 'Samika Agarwal',
-        medium: 'Oil Paint',
+        medium: 'Mixed Media',
         description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.\n' +
             'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'
     },
@@ -66,8 +66,8 @@ export const photoDirectory = [
         description: 'Lorem isit amet, consetetur sadipsc.'
     },
     {
-        src: 'https://images.squarespace-cdn.com/content/v1/5fefc51766132f51ded8b0d3/1609731579919-HBFC6B1X8O1I02CFU6CO/ke17ZwdGBToddI8pDm48kLsycLII_Q-qbbQ-3HMvwChZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwqVr-685tlcxCzEj0tBsK7Qy6f1tAMH9G_On-AOQN6c_svGxC9-iqL3WWnCD3yHvM/Screen+Shot+2021-01-03+at+1.41.48+PM.png?format=750w',
-        name:  'Sun Flowers (Early Work)',
+        src: 'https://images.squarespace-cdn.com/content/v1/61af74eb538f6e0fefa5c521/3e0060ee-0926-409a-9f49-677cec297b75/AgarwalSamika_1in5.png?format=500w',
+        name:  'Mental Heath Awareness',
         author: 'Samika Agarwal',
         medium: 'Oil Paint',
         description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.\n' +
